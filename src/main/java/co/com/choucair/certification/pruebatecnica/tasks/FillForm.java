@@ -57,7 +57,18 @@ public class FillForm implements Task {
                 Click.on(FormPage.NEXT1_BUTTON),
                 Enter.theValue(strCity).into(FormPage.INPUT_CITY),
                 Enter.theValue(strZip).into(FormPage.INPUT_ZIP),
-                EnterValue.(strCountry).into(FormPage.INPUT_COUNTRY),
-                Click.on(FormPage.NEXT2_BUTTON));
+                Click.on(FormPage.INPUT_COUNTRY),
+                Click.on(FormPage.NEXT2_BUTTON),
+                Click.on(FormPage.INPUT_COMPUTER),
+                Click.on(FormPage.INPUT_VERSION),
+                Click.on(FormPage.INPUT_LANGUAGE),
+                Click.on(FormPage.INPUT_MOBIL),
+                Click.on(FormPage.INPUT_MODEL),
+                Click.on(FormPage.INPUT_OP),
+                Click.on(FormPage.NEXT3_BUTTON),
+                Enter.theValue(strPassword).into(FormPage.INPUT_PASSWORD1),
+                Enter.theValue(strPassword).into(FormPage.INPUT_PASSWORD2),
+                Click.on(FormPage.AGREE_TERMS),
+                Click.on(FormPage.AGREE_PRIVACY));
     }
 }

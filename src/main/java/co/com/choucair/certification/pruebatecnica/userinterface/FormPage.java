@@ -40,6 +40,12 @@ public class FormPage {
             .located(By.xpath("//*[@id=\"mobile-device\"]/div[3]/div[2]/div/div[1]/span"));
     public static final Target NEXT3_BUTTON = Target.the("Tercer Boton")
             .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/div[2]/div/a"));
-
-
+    public static final Target INPUT_PASSWORD1 = Target.the("Ingresar Contraseña")
+            .located(By.id("password"));
+    public static final Target INPUT_PASSWORD2 = Target.the("Confirmar contraseña")
+            .located(By.id("confirmPassword"));
+    public static final Target AGREE_TERMS = Target.the("Tercer Boton")
+            .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[5]/label/span[1]"));
+    public static final Target AGREE_PRIVACY = Target.the("Tercer Boton")
+            .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[6]/label/span[1]"));
 }
