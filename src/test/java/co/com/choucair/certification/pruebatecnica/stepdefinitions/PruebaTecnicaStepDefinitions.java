@@ -1,5 +1,7 @@
 package co.com.choucair.certification.pruebatecnica.stepdefinitions;
+
 import co.com.choucair.certification.pruebatecnica.model.PruebaTecnicaData;
+import co.com.choucair.certification.pruebatecnica.questions.Answer;
 import co.com.choucair.certification.pruebatecnica.tasks.FillForm;
 import co.com.choucair.certification.pruebatecnica.tasks.JoinT;
 import co.com.choucair.certification.pruebatecnica.tasks.OpenUp;
@@ -7,6 +9,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
@@ -36,7 +39,9 @@ public class PruebaTecnicaStepDefinitions {
     }
 
     @Then("^el termina el registro satisfactoriamente$")
-    public void elTerminaElRegistroSatisfactoriamente() {
+    public void elTerminaElRegistroSatisfactoriamente(List<PruebaTecnicaData> dato) throws Exception {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(dato.get(0).getStrConfirm())));
+
 
     }
 

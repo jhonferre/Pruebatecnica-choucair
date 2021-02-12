@@ -44,8 +44,14 @@ public class FormPage {
             .located(By.id("password"));
     public static final Target INPUT_PASSWORD2 = Target.the("Confirmar contraseña")
             .located(By.id("confirmPassword"));
-    public static final Target AGREE_TERMS = Target.the("Tercer Boton")
+    public static final Target AGREE_TERMS = Target.the("Aceptar terminos")
             .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[5]/label/span[1]"));
-    public static final Target AGREE_PRIVACY = Target.the("Tercer Boton")
+    public static final Target AGREE_PRIVACY = Target.the("Aceptar politicas")
             .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[6]/label/span[1]"));
+    public static final Target NEXT4_BUTTON = Target.the("Cuarto Boton")
+            .located(By.xpath("//*[@id=\"laddaBtn\"]"));
+    public static final Target CONFIRMATION =Target.the("Verifica mensaje de confirmacion")
+            .located(By.xpath("//*[@id=\"mainContent\"]/div/div/div[2]/div[1]/p[1]/b"));
+
+
 }

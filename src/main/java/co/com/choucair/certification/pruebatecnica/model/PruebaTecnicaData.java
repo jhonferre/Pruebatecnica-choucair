@@ -17,6 +17,7 @@ public class PruebaTecnicaData {
     private String strModel;
     private String strOS;
     private String strPassword;
+    private String strConfirm ;
 
 
     public String getStrFristName() {
@@ -145,5 +146,13 @@ public class PruebaTecnicaData {
 
     public void setStrPassword(String strPassword) {
         this.strPassword = strPassword;
+    }
+
+    public String getStrConfirm() {
+        return strConfirm;
+    }
+
+    public void setStrConfirm(String strConfirm) {
+        this.strConfirm = strConfirm;
     }
 }
