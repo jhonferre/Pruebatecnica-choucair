@@ -19,8 +19,8 @@ public class Answer implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
         boolean result;
-        String nameCourse= Text.of(FormPage.CONFIRMATION).viewedBy(actor).asString();
-        if(strConfirm.equals(nameCourse)) {
+        String WordConfirm= Text.of(FormPage.CONFIRMATION).viewedBy(actor).asString();
+        if(strConfirm.equals(WordConfirm)) {
             result = true;
         }else{
             result = false;

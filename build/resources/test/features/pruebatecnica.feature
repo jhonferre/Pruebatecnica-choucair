@@ -9,4 +9,4 @@ Feature: Prueba tecnica
       | Jhonatan      | Ferreira     | jhonatanferreira0616@gmail.com |  June      | 16      | 1995    | Cúcuta | 540013 | Colombia  | Windows    | 10         | English    | Motorola | Moto G6 Plus | Android 9.0 (Pie) | MiContraseña-2021 |
     Then el termina el registro satisfactoriamente
     |strConfirm                       |
-    | First, please check your email inbox |
+    | The last step |

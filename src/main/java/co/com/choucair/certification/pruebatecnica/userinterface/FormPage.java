@@ -51,7 +51,7 @@ public class FormPage {
     public static final Target NEXT4_BUTTON = Target.the("Cuarto Boton")
             .located(By.xpath("//*[@id=\"laddaBtn\"]"));
     public static final Target CONFIRMATION =Target.the("Verifica mensaje de confirmacion")
-            .located(By.xpath("//*[@id=\"mainContent\"]/div/div/div[2]/div[1]/p[1]/b"));
+            .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[1]/div/div/h1/span[2]"));
 
 
 }

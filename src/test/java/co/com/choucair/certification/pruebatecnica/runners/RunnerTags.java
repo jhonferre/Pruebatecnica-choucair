@@ -11,4 +11,5 @@ import org.junit.runner.RunWith;
         glue="co.com.choucair.certification.pruebatecnica.stepdefinitions",
         snippets=SnippetType.CAMELCASE)
 public class RunnerTags {
+
 }

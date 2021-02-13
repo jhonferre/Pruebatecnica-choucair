@@ -16,6 +16,9 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 import java.util.List;
 
 public class PruebaTecnicaStepDefinitions {
+
+
+
     @Before
     public void setStage(){
         OnStage.setTheStage(new OnlineCast());
