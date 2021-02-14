@@ -27,7 +27,7 @@ public class PruebaTecnicaStepDefinitions {
 
     @Given("^El usuario quiere registrarse en la pagina de utest$")
     public void elUsuarioQuiereRegistrarseEnLaPaginaDeUtest() {
-        OnStage.theActorCalled("Brandon").wasAbleTo(OpenUp.thePage(), JoinT.inThePage());
+        OnStage.theActorCalled("Jhonatan").wasAbleTo(OpenUp.thePage(), JoinT.inThePage());
     }
 
     @When("^El llena el formulario de registro en la pagina de utest$")

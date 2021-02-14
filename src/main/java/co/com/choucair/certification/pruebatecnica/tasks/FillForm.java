@@ -6,7 +6,9 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
+import org.openqa.selenium.Keys;
 
 public class FillForm implements Task {
     private String strFirstName;
@@ -59,12 +61,20 @@ public class FillForm implements Task {
                 Click.on(FormPage.NEXT1_BUTTON),
                 Enter.theValue(strCity).into(FormPage.INPUT_CITY),
                 Enter.theValue(strZip).into(FormPage.INPUT_ZIP),
-                /*Click.on(FormPage.INPUT_COUNTRY),*/
+                Click.on(FormPage.CLICK_COUNTRY),
+                Enter.theValue(strCountry).into(FormPage.INPUT_COUNTRY),
+                Hit.the(Keys.ENTER).into(FormPage.INPUT_COUNTRY),
                 Click.on(FormPage.NEXT2_BUTTON),
-                /*Click.on(FormPage.INPUT_COMPUTER),
-                Click.on(FormPage.INPUT_VERSION),
-                Click.on(FormPage.INPUT_LANGUAGE),
-                Click.on(FormPage.INPUT_MOBIL),
+                Click.on(FormPage.CLICK_COMPUTER),
+                Enter.theValue(strComputer).into(FormPage.INPUT_COMPUTER),
+                Hit.the(Keys.ENTER).into(FormPage.INPUT_COMPUTER),
+                Click.on(FormPage.CLICK_VERSION),
+                Enter.theValue(strVersion).into(FormPage.INPUT_VERSION),
+                Hit.the(Keys.ENTER).into(FormPage.INPUT_VERSION),
+                Click.on(FormPage.CLICK_LANGUAGE),
+                Enter.theValue(strLanguage).into(FormPage.INPUT_LANGUAGE),
+                Hit.the(Keys.ENTER).into(FormPage.INPUT_LANGUAGE),
+                /*Click.on(FormPage.INPUT_MOBIL),
                 Click.on(FormPage.INPUT_MODEL),
                 Click.on(FormPage.INPUT_OP),*/
                 Click.on(FormPage.NEXT3_BUTTON),
